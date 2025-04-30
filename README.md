@@ -25,7 +25,7 @@ So instead, I used a combination of `INDEX` and `MATCH`:
 
 ```excel
 =INDEX(customers!B:B, MATCH(C2, customers!A:A, 0))
-````md
+
 ````
 This formula pulls the **Customer Name** based on the `Customer ID`.
 
