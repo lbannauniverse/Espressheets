@@ -51,3 +51,48 @@ To handle that, I added an `IF` condition to display a blank cell instead of a z
 
 ---
 
+## ☕ Step 3: Importing Product Info
+
+In this step, I filled in the product-related columns:  
+**Coffee Type**, **Roast Type**, **Size**, and **Unit Price**.
+
+This part was a bit more challenging because it involved working with both **row and column matches**.
+
+Here’s the formula I used to retrieve data dynamically based on the column headers:
+
+```excel
+=INDEX(products!$A$1:$G$49, MATCH(orders!$D2, products!$A$1:$A$49, 0), MATCH(orders!I$1, products!$A$1:$G$1, 0))
+```
+
+This formula checks the `Product ID` in column D and pulls the corresponding product detail based on the column name in row 1 (like Coffee Type, Roast Type, etc.).
+
+---
+
+### 💰 Sales Calculation
+
+The last column in the `orders` table is **Sales**, which was simple to calculate:
+
+```excel
+=L2*E2
+```
+
+Where:
+- `L2` is the Unit Price
+- `E2` is the Quantity
+
+---
+
+## 🎨 Step 4: Data Formatting
+
+Now that all the data is in place, I formatted the columns to make them cleaner and more insightful.
+
+- **Date column**: Changed format to `dd/mmm/yyyy` so months appear as words (e.g., Jan, Feb, etc.). This will help in the analysis later.
+  
+- **Size column**: Since it represents kilograms, I used a custom number format to display values like `0.5 kg`:
+  ```text
+  0.0 "kg"
+  ```
+
+- **Price and Sales columns**: I formatted them as currency in dollars. No formula needed — just selected the `$` symbol from currency formatting.
+
+---
