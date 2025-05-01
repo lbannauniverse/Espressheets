@@ -96,3 +96,35 @@ Now that all the data is in place, I formatted the columns to make them cleaner 
 - **Price and Sales columns**: I formatted them as currency in dollars. No formula needed — just selected the `$` symbol from currency formatting.
 
 ---
+
+### 📊 Step 5: Data Analysis and Visualization
+
+This was my favorite part — turning raw data into meaningful insights!
+
+#### ✅ Convert to Table
+
+First, I converted the cleaned dataset into an official **Excel Table**.  
+This makes it easier to reference and work with dynamic data ranges later on.
+
+#### 📈 Create a Pivot Table
+
+Then, I created a **Pivot Table** based on the main data table.
+
+Here's how I structured it:
+- **Rows**: Order Date  
+- **Columns**: Coffee Type  
+- **Values**: Sales
+
+This setup helped me see how sales changed over time for each type of coffee.
+
+#### 📉 Add a Chart
+
+Next, I added a **Line Chart** to visualize the sales trend.  
+Line charts are perfect for historical time-based data like this.
+
+#### 🕒 Add a Timeline Filter
+
+To make it more interactive, I added a **Timeline** for the **Order Date**.  
+Now I can filter the data by month or specific time periods easily.
+
+---
