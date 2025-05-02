@@ -7,6 +7,8 @@ The goal was to extract insights to understand sales performance, identify popul
 
 Each step is clearly documented as part of my data analysis learning journey, and to showcase the project on GitHub and LinkedIn.
 
+![Excelcoffeeproject-Ezgif Com-Video-to-Gif-Converter](https://github.com/user-attachments/assets/608bf5ab-7d94-4d5c-b22b-1c72ba8b01d5)
+
 ---
 
 ## 📌 Acknowledgment
@@ -179,7 +181,7 @@ If a loyalty doesn’t exist, make sure to **Refresh** the Pivot Table.
   
 ---
 
-### Step 6: Adding KPIs🆙🆙
+### Adding KPIs🆙🆙
 
 Before wrapping up the project, I wanted to highlight some key performance indicators (KPIs) to give a clearer overview of business performance. These metrics are displayed alongside the dashboard to make insights easier to understand at a glance.
 
