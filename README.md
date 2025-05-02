@@ -106,6 +106,8 @@ This was my favorite part — turning raw data into meaningful insights!
 First, I converted the cleaned dataset into an official **Excel Table**.  
 This makes it easier to reference and work with dynamic data ranges later on.
 
+![Screenshot 2025-05-01 142801](https://github.com/user-attachments/assets/1b6611c5-dc5c-457b-8a82-3abab76f7b5a)
+
 #### 📈 Create a Pivot Table
 
 Then, I created a **Pivot Table** based on the main data table.
@@ -121,10 +123,94 @@ This setup helped me see how sales changed over time for each type of coffee.
 
 Next, I added a **Line Chart** to visualize the sales trend.  
 Line charts are perfect for historical time-based data like this.
+![Screenshot 2025-05-01 142750](https://github.com/user-attachments/assets/8be4698d-27c5-45bd-b05f-7c1b324a1316)
 
 #### 🕒 Add a Timeline Filter
 
 To make it more interactive, I added a **Timeline** for the **Order Date**.  
 Now I can filter the data by month or specific time periods easily.
+![Screenshot 2025-05-01 144235](https://github.com/user-attachments/assets/8c1907f0-ac52-4367-a8bf-79744e60c20b)
+
+
+---
+
+## 🎯 Step 6: Add Loyalty Card Column
+
+Added a new column called **Loyalty Card** to the dataset, using this formula:
+
+```excel
+=INDEX(customers!$I$2:$I$1001, MATCH([@[Customer ID]], customers!$A$2:$A$1001, 0))
+```
+
+Refreshed the Pivot Table to include the new column.
+
+---
+
+## 🧩 Step 7: Add Slicers
+
+To improve filtering and interactivity, I added **Slicers** to the Pivot Table for:
+
+* Country
+* Coffee Type
+* Roast Type
+* Size
+* Loyalty Card
+
+![Screenshot 2025-05-02 020305](https://github.com/user-attachments/assets/66d3e6a8-3907-435b-b0b4-69e4761eb7a9)
+
+
+If a loyalty doesn’t exist, make sure to **Refresh** the Pivot Table.
+
+---
+
+## 📊 Step 8: Create Additional Charts
+
+* **Country Sales** → Pie Chart
+![Screenshot 2025-05-02 020948](https://github.com/user-attachments/assets/ac4867bd-35ae-4df6-9691-a0718e379915)
+
+  
+* **Roast Type Sales** → Pie Chart
+![Screenshot 2025-05-02 021738](https://github.com/user-attachments/assets/4b74e1aa-7b83-4b9b-b808-0e0840071494)
+
+  
+* **Top 10 Customers** → Bar Chart (sorted by Sales descending)
+![Screenshot 2025-05-02 021730](https://github.com/user-attachments/assets/e0140dd2-3253-478a-ad34-966941cdabb9)
+
+  
+---
+
+## 🧙 Step 9: Build the Dashboard ✨
+
+I created a new sheet for the **Dashboard**, then moved all visuals (charts & slicers) into it.
+
+
+![Screenshot 2025-05-02 024417](https://github.com/user-attachments/assets/3550cef1-8659-4fe7-90cd-9b78174bf76c)
+
+
+
+
+To make slicers affect all visuals, I used:
+
+> Slicer → **Options** → **Report Connections**
+
+Finally, I improved the design with consistent colors and clean formatting.
+
+---
+
+## ✅ Final Thoughts
+
+This project was a big step in my journey toward learning **Data Analysis** and **Financial Analysis**.
+I really enjoyed the process — especially building the dashboard and seeing everything come together.
+
+### 📚 Key Excel Skills Gained:
+
+* `INDEX`, `MATCH`, `IF`, and cell referencing
+* Working with dynamic ranges and tables
+* Pivot Tables and Slicers
+* Data cleaning and formatting
+* Creating interactive dashboards
+* Visualizing data with Line, Pie, and Bar Charts
+
+> I hope you enjoyed reading about my project as much as I enjoyed building it!
 
 ---
