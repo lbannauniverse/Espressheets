@@ -179,6 +179,25 @@ If a loyalty doesn’t exist, make sure to **Refresh** the Pivot Table.
   
 ---
 
+### Step 6: Adding KPIs🆙🆙
+
+Before wrapping up the project, I wanted to highlight some key performance indicators (KPIs) to give a clearer overview of business performance. These metrics are displayed alongside the dashboard to make insights easier to understand at a glance.
+
+* **Total Sales**: I used the `SUM` function to calculate the total value of all sales based on the "Sales" column.
+
+* **Total Orders**: To count the number of orders, I used the `COUNTA` function on the "Order ID" column.
+
+* **Average Order Value**: This KPI shows the average value of each individual order. I calculated it with the following formula:
+
+  ```
+  =SUM(orders[Sales])/COUNTA(orders[Order ID])
+  ```
+![Screenshot 2025-05-02 142259](https://github.com/user-attachments/assets/943d8ed0-2330-49d2-8cdf-be33c1ddf630)
+
+These indicators give a quick summary of how the business is performing and add a more professional touch to the final dashboard.
+
+---
+
 ## 🧙 Step 9: Build the Dashboard ✨
 
 I created a new sheet for the **Dashboard**, then moved all visuals (charts & slicers) into it.
@@ -194,6 +213,9 @@ To make slicers affect all visuals, I used:
 > Slicer → **Options** → **Report Connections**
 
 Finally, I improved the design with consistent colors and clean formatting.
+
+![Screenshot 2025-05-02 153231](https://github.com/user-attachments/assets/daab9f0d-0125-40bf-99e2-b35b849f2f1c)
+
 
 ---
 
